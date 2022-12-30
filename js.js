@@ -86,6 +86,7 @@ function setBlog(blog)
     if (blog == null || blog == "" || blog == "null")
     {
         userBlogLink.innerHTML = "No Blog";
+        userBlogLink.href = "#";
     }
     else
     {
@@ -110,6 +111,7 @@ function setLocation(location)
 // setting profile url 
 function setProfilePhoto(url)
 {
+    
     userProfilePhoto.src = url
 
 }
