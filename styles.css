@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+}
+
+/* setting background image */
+body {
+    background-image: url("images/wallhaven-p8qk1p.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* keeping boxes center */
+.box-container {
+    background-color: rgba(140, 163, 162, 0.61);
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(242, 242, 242, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* adjusting size of boxes */
+.box {
+    background-color: rgba(79, 92, 92, 0.33);
+    width: 32%;
+    height: 85%;
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : space-around;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* adjusting size and coloe of submit button */
+#submit-button {
+    width: 50%;
+    height: 8%;
+    border-radius: 10px;
+
+    background-color: rgba(64, 105, 105, 1);
+
+    outline: none;
+    border: none;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+#submit-button:hover{
+    background-color: rgb(113, 180, 180);
+
+}
+
+/* resizing profile photo */
+#profile-photo {
+    /* display: block; */
+    object-fit: contain;
+    max-width:150px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* adjusting texts */
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* adjusting input bar */
+#username-input {
+    height: 8%;
+    width: 75%;
+}
